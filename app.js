@@ -7,6 +7,7 @@ const db=require("./config/mongoose-connection")
 const ownersRouter=require("./routes/ownersRouter");
 const usersRouter=require("./routes/usersRouter");
 const productsRouter=require("./routes/productsRouter");
+const indexrouter=require("./routes/index")
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
@@ -16,5 +17,6 @@ app.set("view engine","ejs");
 app.use("/owners",ownersRouter);
 app.use("/products",productsRouter);
 app.use("/users",usersRouter);
+app.use("/",indexrouter);
 
 app.listen(3000);

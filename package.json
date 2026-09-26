@@ -4,14 +4,25 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    ,
+    "start"
+    :"node app.js"
+    ,
+    "dev":"npx nodemon app.js"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "dotenv": "^18.0.3",
     "express": "^5.2.1",
-    "mongoose": "^9.10.2"
+    "json": "^11.0.0",
+    "mongoose": "^9.10.2",
+    "path": "^0.12.7"
   }
+
+  
 }
